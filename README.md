@@ -59,4 +59,5 @@ Here's a guide to help you navigate through our files:
         - nn_model is the saved model that we built
             - we use this in our EDA&ModelViz notebook to visualize the model and data 
               as it takes too long to retrain a model
-       
+        - nn_sweep.json is a json mapping latent spaces k that we swept to the test MSE
+
