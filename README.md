@@ -4,12 +4,12 @@ Jay Shi, William Su
 
 Here's a guide to help you navigate through our files:
 
-1. To understand and visualize our data, go to EDA.ipynb. There we perform a number of tasks including:
+1. For Data and Model Visualization, go to EDA.ipynb There we perform a number of tasks including:
     1. Understanding the data (after cleaning and shrinking)
     2. Visualizing the three models through different plots
     3. Comparing all the models' MSE performance together
 
-2. To understand how we loaded and cleaned our raw data go to：
+2. For Data Cleaning, go to：
     1. Folder: ExtractingMatrices
         - the extractThreeMatrices.ipynb notebook will show you how we
           converted a goodreads_interactions_fantasy_paranormal.csv file data
