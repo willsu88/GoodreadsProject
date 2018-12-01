@@ -7,7 +7,7 @@ Here's a guide to help you navigate through our files:
 1. For Data and Model Visualization, go to EDA&ModelViz.ipynb There we perform a number of tasks including:
     1. Visualizing the distrubtion of the average ratings
     2. Comparing the three matrices (shelved, isRead, and rating)
-    2. Visualizing the three models (user-user, matrix factorization, neural network matrix factorization) 
+    2. Visualizing the three models (user-user, matrix factorization, neural network matrix factorization)
     through different plots
     3. Comparing all the models' MSE performance together
 
@@ -15,7 +15,7 @@ Here's a guide to help you navigate through our files:
     1. Folder: ExtractingMatrices
         - json_to_csv_converter.py is a script we found from:
           https://github.com/Yelp/dataset-examples/blob/master/json_to_csv_converter.py
-          it converts the raw data (a json file) to goodreads_interactions_fantasy_paranormal.csv file
+          it converts the raw data goodreads_interactions_fantasy_paranormal.json.gz to goodreads_interactions_fantasy_paranormal.csv file
         - extractThreeMatrices.ipynb notebook will show you how we
           converted a goodreads_interactions_fantasy_paranormal.csv file data
           into three sparse matrices:
@@ -57,7 +57,6 @@ Here's a guide to help you navigate through our files:
         - nn_factorization.ipynb notebook will walk you through how the model is built
         - nn_history is the saved data of a model that we built
         - nn_model is the saved model that we built
-            - we use this in our EDA&ModelViz notebook to visualize the model and data 
+            - we use this in our EDA&ModelViz notebook to visualize the model and data
               as it takes too long to retrain a model
         - nn_sweep.json is a json mapping latent spaces k that we swept to the test MSE
-
