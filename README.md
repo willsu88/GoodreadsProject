@@ -4,14 +4,17 @@ Jay Shi, William Su
 
 Here's a guide to help you navigate through our files:
 
-1. For Data and Model Visualization, go to EDA&ModelViz.ipynb There we perform a number of tasks including:
+1. To understand all of our data, models, and implementation go to:
+    1. FinalReport.pdf
+
+2. For Data and Model Visualization, go to EDA&ModelViz.ipynb There we perform a number of tasks including:
     1. Visualizing the distrubtion of the average ratings
     2. Comparing the three matrices (shelved, isRead, and rating)
     2. Visualizing the three models (user-user, matrix factorization, neural network matrix factorization)
     through different plots
     3. Comparing all the models' MSE performance together
 
-2. Data Cleaning, go to：
+3. Data Cleaning, go to：
     1. Folder: ExtractingMatrices
         - json_to_csv_converter.py is a script we found from:
           https://github.com/Yelp/dataset-examples/blob/master/json_to_csv_converter.py
@@ -35,14 +38,14 @@ Here's a guide to help you navigate through our files:
                 - we decided to shrink the matrices because they were too large
                   and took too much computing power to run
 
-3. UserUser model, go to
+4. UserUser model, go to
     1. Folder: UserUserModel
         - sweepUserUSer.ipynb notebook will show you how we build our weighted
           user-user model and also how we swept through the parameters w1 and w2:
               1. user_user_sweep1.json  user_user_sweep7.json contains json of key (w1, w2)
                  mapped to test_data MSE's
 
-4. For MatrixFactorization model go to:
+5. For MatrixFactorization model go to:
     1. Folder: MatrixFactorizationModel
         - sweep_params_matrix_fact.ipynb notebook will show you how we built the
           matrix factorizaton model based on a UV decomposition and alternating least squares
@@ -52,7 +55,7 @@ Here's a guide to help you navigate through our files:
             2. best_param_50_niter.npy contains a numpy array that contains test_data MSE from iteration 1
               to iteration 50 using the best tuned K, reg pair we found from matrix_factorization_all_params.json
 
-5.  To understand how we built our neural network-based matrix factorization model go to
+6.  To understand how we built our neural network-based matrix factorization model go to
     1. Folder: NeuralNetworkModel
         - nn_factorization.ipynb notebook will walk you through how the model is built
         - nn_history is the saved data of a model that we built
